@@ -16,9 +16,14 @@
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('img/favicon.png') }}" type="image/x-icon">
 
-    @vite(['resources/css/app.css', 'resources/js/app.jsx'])
+
+    <!-- Vite React -->
+    @viteReactRefresh
+    @vite(['resources/scss/app.scss', 'resources/js/app.jsx'])
 </head>
 <body>
-<div id="root"></div>
+
+    <div id="index" data-url="{{ url('/') }}"></div>
+
 </body>
 </html>
