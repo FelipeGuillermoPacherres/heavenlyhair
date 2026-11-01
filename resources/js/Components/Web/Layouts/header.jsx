@@ -11,8 +11,8 @@ export default function Header({ url, path, lang = 'es' }) {
     //console.log(lang);
 
     const bookNowButton = {
-        es: 'Reservar una cita',
-        en: 'Book now'
+        es: 'AGENDAR CITA',
+        en: 'BOOK NOW'
     };
 
     return(
@@ -27,9 +27,18 @@ export default function Header({ url, path, lang = 'es' }) {
                         </a>
                     </div>
 
-                    <div className="col-auto p-0">
-                        <a>{bookNowButton[lang]}</a>
+                    <div className="col-auto p-0 align-content-center">
+                        <a className={'btn btn-md booking-button'}>{bookNowButton[lang]}</a>
                     </div>
+                </div>
+
+                <div className={'nb-contact-label'}>
+                    <span>
+                        <i className="fa-brands fa-square-facebook me-1"></i>
+                        <i className="fa-brands fa-square-instagram me-1"></i>
+                        <i className="fa-brands fa-tiktok me-1"></i>
+                        @heavenlyhair.fl
+                    </span>
                 </div>
             </nav>
         </header>

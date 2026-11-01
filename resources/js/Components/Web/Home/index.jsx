@@ -1,7 +1,13 @@
 import React from 'react';
+import HeroFrame from "./HeroFrame.jsx";
+import AboutUsFrame from "./AboutUsFrame.jsx";
 
-export default function index({url}) {
+export default function index({url, lang = 'es'}) {
     return(
-        <div className={'scsstesting'}>React JS Working!!!</div>
+        <>
+            <HeroFrame url={url} lang={lang} />
+
+            <AboutUsFrame lang={lang} />
+        </>
     )
 }

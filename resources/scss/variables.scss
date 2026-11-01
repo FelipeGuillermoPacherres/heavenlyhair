@@ -1,0 +1,20 @@
+$hhs_black: #282829;
+$hhs_black-dark: #171718;  // Hover
+$hhs_black-light: #F2F2F3; // Fondos suaves
+
+$hhs_gold: #B68D40;
+$hhs_gold_dark: #8C6A2F; // Hover
+$hhs_gold_light: #F5EBD6; // Fondos suaves
+
+$menu_desktop_height: 6rem;
+$menu_mobile_height: 4rem;
+
+
+/*-TEXTS-*/
+
+.text-gold-hhs{  color: $hhs_gold !important; }
+.text-black-hhs{  color: $hhs_black !important; }
+
+
+/*-BACKGROUNDS-*/
+.bg-gray-hhs{ background-color: #F7F7F7}

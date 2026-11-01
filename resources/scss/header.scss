@@ -1,7 +1,11 @@
-$menu_desktop_height: 6rem;
-$menu_mobile_height: 4rem;
 
 .navbar-hhs{
+
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 
     .logo{
         height: 3.5rem;
@@ -11,12 +15,9 @@ $menu_mobile_height: 4rem;
     .menu{
         height: $menu_desktop_height;
         padding: 1rem 3rem;
-        box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
-        position: fixed;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-        background-color: #f5f5f5;
+
+        background-color: #f9f9f9;
+        align-content: center !important;
 
         .flag-style{
             background-position: center;
@@ -28,7 +29,7 @@ $menu_mobile_height: 4rem;
 }
 
 @include media-breakpoint-down(md){ /*--Less than 768px---*/
-    .navbar-bertha{
+    .navbar-hhs{
         .menu{
             height: $menu_mobile_height;
             padding: 0.5rem 1rem;
@@ -39,12 +40,13 @@ $menu_mobile_height: 4rem;
         }
 
         .logo{
-            height: 2rem;
+            height: 2.5rem;
+            width: auto;
         }
     }
 }
-@include media-breakpoint-down(sm){ /*--Less than 768px---*/
-    .navbar-bertha{
+@include media-breakpoint-down(md){ /*--Less than 768px---*/
+    .navbar-hhs{
         .menu{
             height: $menu_mobile_height;
             padding: 0.5rem 1rem;
@@ -60,10 +62,6 @@ $menu_mobile_height: 4rem;
             }
         }
 
-        .logo{
-            height: 1.25rem;
-        }
-
         .langModal-button{
             .langModal-div{
                 box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.075) !important;
@@ -76,8 +74,28 @@ $menu_mobile_height: 4rem;
 }
 
 .main-content{
-    padding-top: $menu_desktop_height;
+    padding-top: $menu_desktop_height + 2.5rem !important;
     @include media-breakpoint-down(md){ /*--Less than 768px---*/
-        padding-top: $menu_mobile_height;
+        padding-top: $menu_mobile_height + 2.5rem !important;
     }
 }
+
+.booking-button{
+    border-radius: 0.625rem !important;
+    background-color: $hhs_black !important;
+    color: white !important;
+    font-weight: bold !important;
+
+    &:hover, &:active, &:focus{
+        background-color: $hhs_black-dark;
+    }
+}
+
+.nb-contact-label{
+    background-color: $hhs_black;
+    color: white;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+
+

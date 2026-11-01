@@ -1,0 +1,35 @@
+.hhs-action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    border: 0;
+    border-radius: 0.625rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+
+    &.black-button{
+        background-color: $hhs_black;
+
+        &:hover {
+            background-color: $hhs_black-dark;
+            color: white;
+        }
+    }
+
+    i {
+        color: $hhs_gold;
+    }
+
+    &:focus-visible {
+        outline: 2px solid $hhs_gold;
+        outline-offset: 3px;
+    }
+}
+
+

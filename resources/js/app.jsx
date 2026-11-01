@@ -23,10 +23,11 @@ if (headerJSX) {
 import IndexJSX from "./Components/Web/Home/index.jsx";
 const indexJSX = document.getElementById("index");
 if (indexJSX) {
-    const { url, num, country, lang} = indexJSX.dataset;
+    const { url, lang} = indexJSX.dataset;
     ReactDOM.createRoot(indexJSX).render(
         <IndexJSX
             url={url}
+            lang={lang}
         />,
     );
 }
