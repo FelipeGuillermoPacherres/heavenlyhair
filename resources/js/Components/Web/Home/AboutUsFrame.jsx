@@ -26,6 +26,13 @@ export default function AboutUsFrame({ lang = "es" }) {
 
     const text = frameText[lang] ?? frameText.en;
 
+    const handleScrollToServices = () => {
+        document.getElementById('our-services')?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    };
+
     return (
         <section className="about-us-frame p-3 p-md-5 bg-gray-hhs">
             <div className="row mx-0 align-items-center">
@@ -61,7 +68,7 @@ export default function AboutUsFrame({ lang = "es" }) {
                         </div>
 
                         <div className="pt-4 d-none d-lg-block">
-                            <ActionButton className="about-button">
+                            <ActionButton className="about-button" onClick={handleScrollToServices}>
                                 {text.button}
                             </ActionButton>
                         </div>
@@ -70,7 +77,7 @@ export default function AboutUsFrame({ lang = "es" }) {
 
                 {/* Botón debajo de la imagen en móvil y tablet */}
                 <div className="col-12 order-3 d-lg-none text-center pt-5 pb-3">
-                    <ActionButton className="about-button">
+                    <ActionButton className="about-button" onClick={handleScrollToServices} >
                         {text.button}
                     </ActionButton>
                 </div>

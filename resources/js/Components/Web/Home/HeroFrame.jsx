@@ -32,7 +32,7 @@ export default function HeroFrame({ url, lang = "es" }) {
                 </h1>
 
                 <div className="d-none d-md-block text-center pt-5">
-                    <ActionButton className="hero-button">
+                    <ActionButton className="hero-button" href="tel:+18138751900">
                         {text.button}
                     </ActionButton>
                 </div>
@@ -43,7 +43,7 @@ export default function HeroFrame({ url, lang = "es" }) {
                 style={heroImageStyle}
             >
                 <div className="hero-mobile-action d-md-none">
-                    <ActionButton className="hero-button golden-border">
+                    <ActionButton className="hero-button golden-border" href="tel:+18138751900">
                         {text.button}
                     </ActionButton>
                 </div>

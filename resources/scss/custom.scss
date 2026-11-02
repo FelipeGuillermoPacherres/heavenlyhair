@@ -2,6 +2,10 @@
     align-content: center !important;
 }
 
+.justify-center{
+    justify-content: center !important;
+}
+
 .underline{
     text-decoration: underline !important;
 }
@@ -26,6 +30,22 @@
         height: 0.5rem;
         margin: 1rem 0;
     }
+}
+
+.hhs-gold-line-2 {
+    width: 10rem;
+    max-width: 100%;
+    height: .5rem;
+    background-color: $hhs_gold;
+    margin: 1rem 0;
+
+    @include media-breakpoint-down(md) {
+        width: 5rem;
+    }
+}
+
+.gold-hr{
+    color: $hhs_gold_dark !important;
 }
 
 //*--HERO FRAME--*//
@@ -239,3 +259,363 @@
     }
 }
 /* ABOUT US FRAME */
+
+/* OUR SERVICES FRAME */
+.our-services-frame{
+    .os-title {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 7.5rem);
+        line-height: 1.1;
+    }
+
+    .os-text {
+        font-size: clamp(1rem, 1.1vw, 2rem);
+        line-height: 1.5;
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .os-cards{
+        .service-card{
+
+            &:hover{
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+
+            .service-card-image {
+                overflow: hidden;
+
+                img {
+                    display: block;
+                    transition:
+                        transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+                        filter 0.4s ease;
+                }
+            }
+
+            &:hover {
+                .service-card-image img {
+                    transform: scale(1.05);
+                    filter: brightness(0.9);
+                }
+            }
+        }
+    }
+
+    .os-button {
+        max-width: 100%;
+        padding: 0.8rem 1.25rem;
+        font-size: clamp(1rem, 1.8vw, 2rem);
+
+        span {
+            min-width: 0;
+            white-space: normal;
+        }
+
+        i {
+            flex-shrink: 0;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        .os-title {
+            font-size: clamp(1.75rem, 6vw, 3rem);
+        }
+
+        .os-text {
+            font-size: 1.1rem;
+        }
+
+        .os-button {
+            padding: 0.8rem 1rem;
+            font-size: clamp(0.9rem, 3vw, 1.5rem);
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+
+        .os-text {
+            font-size: 1.5rem;
+        }
+    }
+}
+/* OUR SERVICES FRAME */
+
+/* FIND US FRAME */
+.find-us-frame{
+    .fu-title{
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 7.5rem);
+        line-height: 1.1;
+    }
+
+    .fu-text {
+        font-size: clamp(1rem, 1.1vw, 2rem);
+        line-height: 1.5;
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .fu-location{
+        img{
+            border-radius: 5%;
+        }
+
+        .fu-loc-data{
+            background-color: white;
+            border-radius: 0.625rem;
+            padding: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }
+
+        a,p{
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 0.3rem;
+        }
+
+        a {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+
+            &:hover {
+                color: $hhs_gold;
+            }
+        }
+
+        .address,
+        .phone,
+        .service-hours {
+
+            > i {
+                font-size: 1.5rem;
+                width: 30px;
+                flex-shrink: 0;
+                margin-top: 4px;
+            }
+        }
+
+        .findus-button{
+            justify-items: left;
+        }
+    }
+
+    .fu-button {
+        color: white !important;
+        width: fit-content;
+        padding: 0.8rem 1.25rem;
+        font-size: clamp(1rem, 1.8vw, 2rem);
+
+        span {
+            min-width: 0;
+            white-space: normal;
+        }
+
+        i {
+            flex-shrink: 0;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        .fu-title {
+            font-size: clamp(1.75rem, 6vw, 3rem);
+        }
+
+        .fu-text {
+            font-size: 1.1rem;
+        }
+
+        .fu-button {
+            padding: 0.8rem 1rem;
+            font-size: clamp(0.9rem, 3vw, 1.5rem);
+        }
+
+        .fu-location{
+            .fu-loc-data{
+                padding: 1rem;
+            }
+
+            h3 {
+                font-size: 1.15rem;
+            }
+
+            a,p{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+
+        .fu-text {
+            font-size: 1.5rem;
+        }
+
+        .fu-location{
+            .fu-loc-data{
+                padding: .5rem;
+            }
+
+            .findus-button{
+                justify-items: center;
+            }
+        }
+    }
+}
+/* FIND US FRAME */
+
+/* SERVICES MODAL */
+    .services-modal{
+
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .modal-header {
+            border-bottom: solid 2px lightgray !important;
+            padding: 1rem 1.25rem;
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+        }
+
+        .modal-footer {
+            padding: 1rem 1.5rem;
+        }
+
+        .icon{
+            padding: .5rem;
+            border-radius: .625rem;
+            background-color: $hhs_gold_light;
+            i{
+                color: $hhs_gold_dark;
+            }
+        }
+
+        .services-button{
+            font-size: 1.5rem;
+        }
+
+        .services-list {
+
+            li {
+                border-bottom: 1px solid #eeeeee;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+
+            .service-name {
+                font-size: 1.5rem;
+                line-height: 1.5;
+            }
+
+            .service-price {
+                font-size: 1.5rem;
+                white-space: nowrap;
+            }
+        }
+
+        .modal-price-note {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #777;
+            line-height: 1.4;
+            margin-top: 0.25rem;
+        }
+
+        @media (max-width: 767.98px) {
+
+            .services-button{
+                font-size: 1.15rem;
+            }
+
+
+            .services-list {
+
+                li {
+                    padding-top: 0.75rem !important;
+                    padding-bottom: 0.75rem !important;
+                }
+
+                .service-name {
+                    font-size: 1.15rem;
+                }
+
+                .service-price {
+                    font-size: 1.15rem;
+                }
+
+
+            }
+        }
+    }
+/* SERVICES MODAL */
+
+/* GOLD DIVIDER */
+.gold-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+
+    color: $hhs_gold; // Dorado Heavenly Hair Salon
+
+    .gold-divider-line {
+        height: 1px;
+        width: 100%;
+        max-width: 180px;
+        background: linear-gradient(
+            90deg,
+            transparent,
+            currentColor
+        );
+
+        &:last-child {
+            transform: rotate(180deg);
+        }
+    }
+
+    i {
+        font-size: 1.5rem;
+        flex-shrink: 0;
+    }
+
+    @media (max-width: 767.98px) {
+        gap: 0.75rem;
+
+        .gold-divider-line {
+            max-width: 90px;
+        }
+
+        i {
+            font-size: 1.2rem;
+        }
+    }
+}
+/* GOLD DIVIDER */
