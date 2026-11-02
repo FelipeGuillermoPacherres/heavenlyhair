@@ -3,6 +3,7 @@ import React from "react";
 export default function ActionButton({
  children,
  href,
+ target = '_self',
  onClick,
  type = 'button',
  className = '',
@@ -18,7 +19,7 @@ export default function ActionButton({
     const classes = `hhs-action-button ${btnColor}-button ${className}`;
 
     return href ? (
-        <a href={href} className={classes} onClick={onClick}>
+        <a href={href} className={classes} onClick={onClick} target={target}>
             {content}
         </a>
     ) : (

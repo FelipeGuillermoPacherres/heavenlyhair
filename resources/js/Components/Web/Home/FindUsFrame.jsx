@@ -117,6 +117,7 @@ export default function FindUsFrame({lang = "es"}) {
                             <div className={'findus-button ps-md-4'}>
                                 <ActionButton
                                     href="https://www.google.com/maps/search/?api=1&query=2701+W+Tampa+Bay+Blvd+Tampa+FL+33607"
+                                    target={'_blank'}
                                     className="fu-button"
                                 >
                                     {text.button}
