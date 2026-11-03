@@ -74,7 +74,7 @@
 }
 
 .main-content{
-    padding-top: $menu_desktop_height + 2.5rem !important;
+    padding-top: $menu_desktop_height + 3.3rem !important;
     @include media-breakpoint-down(md){ /*--Less than 768px---*/
         padding-top: $menu_mobile_height + 2.5rem !important;
     }
@@ -96,6 +96,11 @@
     color: white;
     padding: .5rem 1rem;
     text-align: center;
+    font-size: 1.5rem;
+
+    @include media-breakpoint-down(md) {
+        font-size: 1rem;
+    }
 }
 
 

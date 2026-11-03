@@ -7,7 +7,7 @@ $hhs_gold_dark: #8C6A2F; // Hover
 $hhs_gold_light: #F5EBD6; // Fondos suaves
 
 $menu_desktop_height: 6rem;
-$menu_mobile_height: 4rem;
+$menu_mobile_height: 6rem;
 
 
 /*-TEXTS-*/
@@ -18,3 +18,4 @@ $menu_mobile_height: 4rem;
 
 /*-BACKGROUNDS-*/
 .bg-gray-hhs{ background-color: #F7F7F7}
+.bg-ligth-gold-hhs{ background-color: $hhs_gold_light}

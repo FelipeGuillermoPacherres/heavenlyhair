@@ -4,6 +4,8 @@ import HeroFrame from "./HeroFrame.jsx";
 import AboutUsFrame from "./AboutUsFrame.jsx";
 import OurServicesFrame from "./OurServicesFrame.jsx";
 import FindUsFrame from "./FindUsFrame.jsx";
+import SocialMediaFrame from "./SocialMediaFrame.jsx";
+import BookingFrame from "./BookingFrame.jsx";
 
 export default function index({url, lang = 'es'}) {
     return(
@@ -20,7 +22,9 @@ export default function index({url, lang = 'es'}) {
 
             <FindUsFrame lang={lang} />
 
-            <GoldDivider />
+            <SocialMediaFrame lang={lang} />
+
+            <BookingFrame lang={lang} />
 
         </>
     )

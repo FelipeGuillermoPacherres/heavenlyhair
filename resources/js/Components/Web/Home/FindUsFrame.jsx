@@ -72,7 +72,7 @@ export default function FindUsFrame({lang = "es"}) {
 
                                 <div>
                                     <h3>{dataText.addressTitle}</h3>
-                                    <a>2701 W Tampa Bay Blvd, Tampa, FL 33607</a>
+                                    <a href={'https://maps.app.goo.gl/V5ysrnqvaZ9scamf7'} target={'_blank'}>2701 W Tampa Bay Blvd, Tampa, FL 33607</a>
                                 </div>
                             </div>
 
@@ -116,7 +116,7 @@ export default function FindUsFrame({lang = "es"}) {
 
                             <div className={'findus-button ps-md-4'}>
                                 <ActionButton
-                                    href="https://www.google.com/maps/search/?api=1&query=2701+W+Tampa+Bay+Blvd+Tampa+FL+33607"
+                                    href="https://maps.app.goo.gl/V5ysrnqvaZ9scamf7"
                                     target={'_blank'}
                                     className="fu-button"
                                 >

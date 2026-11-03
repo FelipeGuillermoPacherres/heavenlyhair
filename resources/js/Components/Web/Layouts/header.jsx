@@ -34,8 +34,7 @@ export default function Header({ url, path, lang = 'es' }) {
 
                 <div className={'nb-contact-label'}>
                     <span>
-                        <i className="fa-brands fa-square-facebook me-1"></i>
-                        <i className="fa-brands fa-square-instagram me-1"></i>
+                        <i className="fa-brands fa-instagram me-1"></i>
                         <i className="fa-brands fa-tiktok me-1"></i>
                         @heavenlyhair.fl
                     </span>
