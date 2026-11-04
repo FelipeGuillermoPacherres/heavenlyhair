@@ -29,5 +29,7 @@
     @yield('content')
 </section>
 
+<div id="footer" data-url="{{ url('/') }}" data-path="{{ request()->path() }}" data-lang="{{ session('lang', 'en') }}"></div>
+
 </body>
 </html>

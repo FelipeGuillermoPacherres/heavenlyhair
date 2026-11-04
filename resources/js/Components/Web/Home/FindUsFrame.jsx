@@ -124,7 +124,6 @@ export default function FindUsFrame({lang = "es"}) {
                                 </ActionButton>
                             </div>
 
-
                         </div>
                     </div>
                     <div className={'col-12 col-md-6 order-1 order-md-2'}>

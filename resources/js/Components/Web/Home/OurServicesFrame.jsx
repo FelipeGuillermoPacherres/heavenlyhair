@@ -44,12 +44,6 @@ export default function OurServicesFrame({ lang = "es" }) {
                     ))}
                 </div>
             </div>
-
-            <div className="text-center pt-3 pt-md-5 pb-3">
-                <ActionButton className="os-button" href="tel:+18138751900">
-                    {text.button}
-                </ActionButton>
-            </div>
         </section>
     )
 }

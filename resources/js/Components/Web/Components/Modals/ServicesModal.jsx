@@ -1,8 +1,7 @@
 import React, {useState} from "react";
 import {Modal, ModalBody, ModalFooter, ModalHeader, ModalTitle} from "react-bootstrap";
 import ActionButton from "../ActionButton.jsx";
-
-export default function ServicesModal({data, lang}) {
+export default function ServicesModal({data, lang = 'es'}) {
 
     const [showModal, setShowModal] = useState(false);
 
@@ -11,14 +10,10 @@ export default function ServicesModal({data, lang}) {
         en: 'BOOK NOW'
     }
 
-    const modalText = {
-        es: {
-            disclaimer: "Los precios mostrados son a partir del monto indicado y pueden variar según el servicio y las necesidades de cada cliente."
-        },
-        en: {
-            disclaimer: "Prices shown are starting rates and may vary depending on the service and individual needs."
-        }
-    };
+    const disclaimer = {
+        es: 'Los precios son a partir del monto indicado y pueden variar según el servicio.',
+        en: 'Starting prices shown. Final prices may vary depending on the service.'
+    }
 
     return(
         <>
@@ -59,9 +54,7 @@ export default function ServicesModal({data, lang}) {
                                 <span>{data.name[lang]}</span>
 
                                 <small className="modal-price-note">
-                                    {lang === 'es'
-                                        ? 'Los precios son a partir del monto indicado y pueden variar según el servicio.'
-                                        : 'Starting prices shown. Final prices may vary depending on the service.'}
+                                    {disclaimer[lang]}
                                 </small>
                             </div>
                         </div>
@@ -86,7 +79,7 @@ export default function ServicesModal({data, lang}) {
                 </ModalBody>
 
                 <ModalFooter className={'justify-center'}>
-                    <ActionButton className="services-button">
+                    <ActionButton className="services-button" href={'tel:+18138751900'}>
                         {buttonText[lang]}
                     </ActionButton>
                 </ModalFooter>

@@ -1,5 +1,6 @@
 import React from "react";
 import imgLogo from "../../../../../public/img/logo-bk.png";
+import SocialMediaLabelModal from "../Components/Modals/SocialMediaLabelModal.jsx";
 
 export default function Header({ url, path, lang = 'es' }) {
 
@@ -32,13 +33,7 @@ export default function Header({ url, path, lang = 'es' }) {
                     </div>
                 </div>
 
-                <div className={'nb-contact-label'}>
-                    <span>
-                        <i className="fa-brands fa-instagram me-1"></i>
-                        <i className="fa-brands fa-tiktok me-1"></i>
-                        @heavenlyhair.fl
-                    </span>
-                </div>
+                <SocialMediaLabelModal lang={lang} />
             </nav>
         </header>
     )

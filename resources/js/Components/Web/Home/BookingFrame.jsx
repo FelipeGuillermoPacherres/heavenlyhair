@@ -30,7 +30,7 @@ export default function BookingFrame({lang = 'es'}) {
             <div className={'row mx-0'}>
                 <div className={'col-12 col-md-7 align-content-center pb-5 pb-md-0'}>
 
-                    <h2 className="bf-title pt-4 px-3 px-md-5">
+                    <h2 className="bf-title pt-4 px-3 px-md-0">
                         {text.title}
                         <span className="text-gold-hhs fw-bold">
                             {text.btitle}

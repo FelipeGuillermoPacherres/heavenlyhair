@@ -8,8 +8,13 @@
 @import "variables.scss";
 
 @import "custom.scss";
-@import "header.scss";
 @import "action_button.scss";
+
+
+@import "header.scss";
+@import "footer.scss";
+@import "fp_web_designs.scss";
+@import "social_media_label_modal.scss";
 
 body{
     -webkit-user-select: none; /* Safari */

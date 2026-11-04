@@ -19,6 +19,20 @@ if (headerJSX) {
     );
 }
 
+/*---footer.jsx---*/
+import FooterJSX from "./Components/Web/Layouts/footer.jsx";
+const footerJSX = document.getElementById("footer");
+if (footerJSX) {
+    const { url, path, lang} = footerJSX.dataset;
+    ReactDOM.createRoot(footerJSX).render(
+        <FooterJSX
+            url={url}
+            path={path}
+            lang={lang}
+        />,
+    );
+}
+
 /*---index.jsx---*/
 import IndexJSX from "./Components/Web/Home/index.jsx";
 const indexJSX = document.getElementById("index");
