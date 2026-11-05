@@ -26,8 +26,6 @@ export default function SocialMediaFrame({ lang = "es" }) {
     return (
         <section className="social-media-frame px-3 px-md-5 py-1 py-md-3">
 
-            <GoldDivider background={false} />
-
             <h2 className="sm-title text-center pt-4 pt-md-5">
                 {text.title}
                 <span className="text-gold-hhs fw-bold">
@@ -72,7 +70,6 @@ export default function SocialMediaFrame({ lang = "es" }) {
                 </div>
             </div>
 
-            <GoldDivider background={false} />
         </section>
     );
 }

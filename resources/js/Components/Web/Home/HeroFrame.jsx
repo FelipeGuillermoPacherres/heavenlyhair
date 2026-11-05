@@ -6,11 +6,13 @@ export default function HeroFrame({ url, lang = "es" }) {
         es: {
             hero: "Donde la belleza se encuentra con la",
             bhero: "PERFECCIÓN",
+            heroDescription: "Tu salón de belleza en Tampa, Florida. A solo minutos del estadio de los Buccaneers.",
             button: "AGENDAR CITA",
         },
         en: {
             hero: "Where beauty meets",
             bhero: "PERFECTION",
+            heroDescription: "Your hair salon in Tampa, Florida. Just minutes from Raymond James Stadium.",
             button: "BOOK NOW",
         },
     };
@@ -30,6 +32,8 @@ export default function HeroFrame({ url, lang = "es" }) {
                         {text.bhero}
                     </strong>
                 </h1>
+
+                <p className={'hero-description px-3 pe-md-0'}>{text.heroDescription}</p>
 
                 <div className="d-none d-md-block text-center pt-5">
                     <ActionButton className="hero-button" href="tel:+18138751900">

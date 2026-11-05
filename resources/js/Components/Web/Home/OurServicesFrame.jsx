@@ -26,13 +26,13 @@ export default function OurServicesFrame({ lang = "es" }) {
         <section id="our-services" className={'our-services-frame p-3 p-md-5 bg-gray-hhs'}>
             <h2 className="os-title text-center">
                 {text.title}
-                <span className="text-gold-hhs fw-bold">
+                <span className="text-gold-hhs fw-bold ">
                     {text.btitle}
                 </span>
             </h2>
 
             <div className="os-text pt-4 px-3 px-md-5">
-                <p>{text.text1}</p>
+                <p className={'text-center'}>{text.text1}</p>
             </div>
 
             <div className={'os-cards pt-3 pt-md-5 container'}>

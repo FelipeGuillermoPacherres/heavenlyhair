@@ -58,7 +58,7 @@ export default function FindUsFrame({lang = "es"}) {
             </h2>
 
             <div className="fu-text pt-4 px-3 px-md-5">
-                <p>{text.text1}</p>
+                <p className={'text-center'}>{text.text1}</p>
             </div>
 
             <div className={'fu-location pt-3 pt-md-5'}>
